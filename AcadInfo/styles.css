@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+div {
+    /* 100/5=20% of the page*/
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+p {
+    float: center;
+    text-align: center;
+    font-size: 3vw;
+    padding: 0px;
+    
+}
+
+/* Changes the color for the 5 selections */
+/* aca - Academy */
+#aca1 {
+    background:rgb(28, 169, 212);
+}
+#aca2 {
+    background:rgb(30, 185, 30);
+}
+#aca3 {
+    background:rgb(151, 0, 0);
+}
+#aca4 {
+    background:rgb(20, 5, 235);
+}
+#aca5 {
+    background:rgb(92, 12, 167);
+}
