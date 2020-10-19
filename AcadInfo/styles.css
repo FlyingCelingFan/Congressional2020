@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: #251abc;
+}
+
+.fiveSplit {
+    width: 20%;
+    height: 100%;
+    float: left;
+    box-shadow: 0 0 10px gray;
+}   
+
+.fiveSplit:hover {
+    box-shadow: 5px -5px 5px 5px black;
+}
+
+a, p, li {
+/* centers text */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100%;
+    font-size: 2vw;
+    padding: 0px;
+    text-decoration: underline;
+    color: black;
+}
+
+/* Changes the color for the 5 selections */
+/* aca - Academy */
+#aca1 {
+    background-image: url("media/acad1.webp");
+    background-size: 18vw;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: white;
+}
+#aca2 {
+    background-image: url("media/acad2.png");
+    background-size: 15vw;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: white;
+
+}
+#aca3 {
+    background-image: url("media/acad3.jpg");
+    background-size: 19vw;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: white;
+
+}
+#aca4 {
+    background-image: url("media/acad4.png");
+    background-size: 14vw;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: white;
+
+}
+#aca5 {
+    background-image: url("media/acad5.jpg");
+    background-size: 14vw;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: white;
+
+}
+
+/* On hover actions */
