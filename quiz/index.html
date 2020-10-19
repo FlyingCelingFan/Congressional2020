@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Congressional</title>
+	<meta charset="UTF-8">
+	<link href = "styles.css" type = "text/css" rel="stylesheet">
+ 
+</head>
+ 
+<body>
+ 
+	<h1>Personality Quiz</h1>
+ 
+	<div id="test">
+ 
+    <div id="question1">
+		<p>Question #1: Which of these would you rather do?</p>
+		<form>
+      <!-- Why are there 2 onclick functions? The first one adds to the total, the second one hides the question -->
+			<button type="button" onclick="one();delete1()">Painting</button>
+			<button type="button" onclick="two();delete1()">Helping People Recover from Illness</button>
+     	 	<button type="button" onclick="three();delete1()">Designing a Bridge</button>
+      		<button type="button" onclick="four();delete1()">Planting Trees</button>
+      		<button type="button" onclick="five();delete1()">Politics</button>
+    	</form>
+    </div>
+ 
+    <div id="question2">
+      <p>Question #2: Which interests you the most?</p>
+      <form>
+        <button type="button" onclick="one();delete2()">Theater</button>
+        <button type="button" onclick="two();delete2()">Medicine</button>
+        <button type="button" onclick="three();delete2()">Computers</button>
+        <button type="button" onclick="four();delete2()">Agriculture</button>
+        <button type="button" onclick="five();delete2()">Marketing Strategies</button>
+      </form>
+      </div>
+ 
+      <div id="question3">
+        <p>Question #3: What shows do you like to watch?</p>
+        <form>
+          <button type="button" onclick="one();delete3()">Dramas</button>
+          <button type="button" onclick="two();delete3()">Healthcare News</button>
+          <button type="button" onclick="three();delete3()">How It's Made</button>
+          <button type="button" onclick="four();delete3()">National Geographic</button>
+          <button type="button" onclick="five();delete3()">Court Shows</button>
+        </form>
+        </div>
+ 
+        <div id="question4">
+          <p>Question #4:Would you rather...</p>
+          <form>
+            <button type="button" onclick="one();delete4()">Act in a Play</button>
+            <button type="button" onclick="two();delete4()">Work with Doctors</button>
+            <button type="button" onclick="three();delete4()">Create Circuits</button>
+            <button type="button" onclick="four();delete4()">Grow Crops</button>
+            <button type="button" onclick="five();delete4()">Make Desserts</button>
+          </form>
+          </div>
+ 
+          <div id="question5">
+            <p>Question #5: Which is one of your values?</p>
+            <form>
+              <button type="button" onclick="one();delete5()">Creativity</button>
+              <button type="button" onclick="two();delete5()">Health and Well-being</button>
+              <button type="button" onclick="three();delete5()">Innovation</button>
+              <button type="button" onclick="four();delete5()">Sustainable Agriculture</button>
+              <button type="button" onclick="five();delete5()">Public Assisting</button>
+            </form>
+            </div>
+ 
+ 
+ 
+	</div>
+ 
+	<br></br>
+	<br></br>
+ 
+ <!---When the button is submitted, it runs the result function, which shows the result--->
+	<button type="button" id="submit" onclick="showResult()" >Submit for Your Recommendations</button>
+
+	<p id = "result"></p>
+ 
+</body>
+ 
+ 
+<script type = "text/javascript" src="app.js"></script>
+ 
+</html>

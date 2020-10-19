@@ -1,0 +1,72 @@
+body{
+	text-align:center;
+	background-color:#ECF1F5;
+}
+
+h1{
+	color:#1C2541;
+	font-size: 45px;
+}
+
+#test{
+	text-align:center;
+}
+
+#test{
+	display: inline-table;
+	color:#1C2541;
+	font-size: 24px;
+}
+
+#submit{
+	font-size:15px;
+	border-radius:15px;
+	display:inline-block;
+	color: white;
+	text-align:center;
+	padding: 14px 50px;
+	border:black 2px;
+	background-color:#1C2541;
+}
+
+#submit:hover, #submit:focus{
+	background-color: #3A506B;
+	outline:none;
+}
+
+button{
+	background-color:#1C2541; 
+	color: white;
+	border: none;
+  	padding: 15px 32px;
+ 	text-align: center;
+  	display: inline-block;
+  	font-size: 12px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+}
+
+button:hover{
+	background-color: #3A506B;
+	outline:none;
+}
+
+.agree:focus{
+	background-color: #3A506B;
+	outline:none;
+}
+
+.neutral:focus{
+	background-color: #3A506B;
+	outline:none;
+}
+
+.disagree:focus{
+	background-color: #3A506B;
+	outline:none;
+}
+
+#result{
+	color:#1C2541;
+	font-size: 24px;
+}
