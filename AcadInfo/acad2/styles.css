@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: white;
+}
+
+p, li {
+/* centers text */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100%;
+    font-size: 2vw;
+    padding: 0px;
+    text-decoration: underline;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+#content {
+    background-color: coral;
+    height: 115vw;
+    width: 60%;
+    margin:auto;
+}
+
+#title {
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+.pathway {
+    text-align: center;
+    font-size: 1vw;
+}
