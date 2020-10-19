@@ -1,64 +1,61 @@
-var question1 = document.getElementByID("question1");
-var question2 = document.getElementByID("question2");
-var question3 = document.getElementByID("question3");
-var question4 = document.getElementByID("question4");
 
-function Cul_question1(question1){
-	if (document.getElementsByName("agree").clicked = true){
-		return 3;
-	} else if (document.getElementsByName("neutral").clicked = true){
-		return 2;
-	} else {
-		return 1;
+var total = 0
+
+//The following functions adds what is says
+function one(){
+	total=total+1;
+}
+
+function two(){
+	total=total+2;
+}
+
+function three(){
+	total=total+3;
+}
+
+function four(){
+	total=total+4;
+}
+
+function five(){
+	total=total+5;
+}
+
+//functions to hide questions
+
+function delete1(){
+	document.getElementById("question1").style.display="none";
+}
+
+function delete2(){
+	document.getElementById("question2").style.display="none";
+}
+
+function delete3(){
+	document.getElementById("question3").style.display="none";
+}
+
+function delete4(){
+	document.getElementById("question4").style.display="none";
+}
+
+function delete5(){
+	document.getElementById("question5").style.display="none";
+}
+
+//add result function below
+
+function showResult(){
+	if (total <= 5){
+		document.getElementById("result").innerHTML = ("Your Recommended Academy is Arts and Communication!")
+	} else if (total >= 6 && total <= 10){
+		document.getElementById("result").innerHTML = ("Your Recommended Academy is Health and Sciences!")
+	} else if (total >= 11 && total <= 15){
+		document.getElementById("result").innerHTML = ("Your Recommended Academy is Information Engineering Technology!")
+	} else if (total >= 16 && total <= 20){
+		document.getElementById("result").innerHTML = ("Your Recommended Academy is Natural Resources!")
+	} else if (total >= 21 && total <= 25) {
+		document.getElementById("result").innerHTML = ("Your Recommended Academy is Professional and Public Services!")
 	}
-};
-
-var Culinary_question1 = Cul_question1();
-
-function Cul_question2(question2){
-	if (document.getElementsByName("agree").clicked = true){
-		return 3;
-	} else if (document.getElementsByName("neutral").clicked = true){
-		return 2;
-	} else {
-		return 1;
-	}
-};
-
-var Culinary_question2 = Cul_question2();
-
-function Acc_question3(question3){
-	if (document.getElementsByName("agree").clicked = true){
-		return 3;
-	} else if (document.getElementsByName("neutral").clicked = true){
-		return 2;
-	} else {
-		return 1;
-	}
-};
-
-var Accounting_question3 = Acc_question3();
-
-function Acc_question4(question4){
-	if (document.getElementsByName("agree").clicked = true){
-		return 3;
-	} else if (document.getElementsByName("neutral").clicked = true){
-		return 2;
-	} else {
-		return 1;
-	}
-};
-
-var Accounting_question4 = Acc_question4();
-
-var Culinary = Cul_question1 + Cul_question2;
-
-var Accounting = Acc_question3 + Acc_question4;
-
-function result(){
-	console.log(Culinary);
-	console.log(Accounting);
-};
-
-
-document.getElementById("submit").innerHTML = result();
+}
