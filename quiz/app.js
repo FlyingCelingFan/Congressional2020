@@ -1,60 +1,64 @@
-var agree = parseInt(document.getElementByID("agree").value);
-var neutral = parseInt(document.getElementByID("neutral").value);
-var disagree = parseInt(document.getElementByID("disagree").value);
+var question1 = document.getElementByID("question1");
+var question2 = document.getElementByID("question2");
+var question3 = document.getElementByID("question3");
+var question4 = document.getElementByID("question4");
 
-function question1(){
-	if (choice === agree){
-		value = 3;
-	} else if (choice === neutral){
-		value = 2;
+function Cul_question1(question1){
+	if (document.getElementsByName("agree").clicked = true){
+		return 3;
+	} else if (document.getElementsByName("neutral").clicked = true){
+		return 2;
 	} else {
-		value = 1;
+		return 1;
 	}
 };
 
-var question1 = question1();
+var Culinary_question1 = Cul_question1();
 
-function question2(){
-	if (choice === agree){
-		value = 3;
-	} else if (choice === neutral){
-		value = 2;
+function Cul_question2(question2){
+	if (document.getElementsByName("agree").clicked = true){
+		return 3;
+	} else if (document.getElementsByName("neutral").clicked = true){
+		return 2;
 	} else {
-		value = 1;
+		return 1;
 	}
 };
 
-var question2 = question2();
+var Culinary_question2 = Cul_question2();
 
-function question3(){
-	if (choice === agree){
-		value = 3;
-	} else if (choice === neutral){
-		value = 2;
+function Acc_question3(question3){
+	if (document.getElementsByName("agree").clicked = true){
+		return 3;
+	} else if (document.getElementsByName("neutral").clicked = true){
+		return 2;
 	} else {
-		value = 1;
+		return 1;
 	}
 };
 
-var question3 = question3();
+var Accounting_question3 = Acc_question3();
 
-function question4(){
-	if (choice === agree){
-		value = 3;
-	} else if (choice === neutral){
-		value = 2;
+function Acc_question4(question4){
+	if (document.getElementsByName("agree").clicked = true){
+		return 3;
+	} else if (document.getElementsByName("neutral").clicked = true){
+		return 2;
 	} else {
-		value = 1;
+		return 1;
 	}
 };
 
-var question4 = question4();
+var Accounting_question4 = Acc_question4();
 
-var Culinary = question1 + question2;
+var Culinary = Cul_question1 + Cul_question2;
 
-var Accounting = question3 + question4;
+var Accounting = Acc_question3 + Acc_question4;
 
-function submit(){
+function result(){
 	console.log(Culinary);
 	console.log(Accounting);
-}
+};
+
+
+document.getElementById("submit").innerHTML = result();

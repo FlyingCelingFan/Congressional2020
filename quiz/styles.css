@@ -18,7 +18,7 @@ h1{
 	font-size: 24px;
 }
 
-input[type=submit]{
+#submit{
 	font-size:15px;
 	border-radius:15px;
 	display:inline-block;
@@ -26,12 +26,16 @@ input[type=submit]{
 	text-align:center;
 	padding: 14px 50px;
 	border:black 2px;
-	background-color:#3A506B;
-	box-shadow: 5px 10px #1C2541;
+	background-color:#1C2541;
+}
+
+#submit:hover, #submit:focus{
+	background-color: #3A506B;
+	outline:none;
 }
 
 button{
-	background-color:#3A506B; 
+	background-color:#1C2541; 
 	color: white;
 	border: none;
   	padding: 15px 32px;
@@ -40,4 +44,24 @@ button{
   	font-size: 12px;
   	margin: 4px 2px;
   	cursor: pointer;
+}
+
+button:hover{
+	background-color: #3A506B;
+	outline:none;
+}
+
+.agree:focus{
+	background-color: #3A506B;
+	outline:none;
+}
+
+.neutral:focus{
+	background-color: #3A506B;
+	outline:none;
+}
+
+.disagree:focus{
+	background-color: #3A506B;
+	outline:none;
 }
