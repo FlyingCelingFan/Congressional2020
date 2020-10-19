@@ -17,7 +17,18 @@ a, p, li {
 }
 
 #content {
-    color: coral;
+    background-color: coral;
     height: 100%;
     width: 60%;
+    margin:auto;
+}
+
+#title {
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+.pathway {
+    text-align: center;
+    font-size: 1vw;
 }
